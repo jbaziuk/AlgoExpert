@@ -8,7 +8,7 @@ public class FibonacciTests {
 
     @Test
     public void easyFibTest(){
-        Assert.assertEquals(1, Fibonacci.getNthFib(5));
+        Assert.assertEquals(Fibonacci.getNthFib(5), 3);
     }
 
     @Test
