@@ -6,7 +6,7 @@ public class PowerOfN {
         if (n == 1) {
             return base;
         }
-        return base * powerN(base, n-1);
+        return base * powerN(base, n - 1);
     }
 }
 

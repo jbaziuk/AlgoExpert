@@ -7,7 +7,9 @@ import org.testng.annotations.Test;
 public class PowerOfNTests {
 
     @Test
-    public void powerOneTest() { Assert.assertEquals(PowerOfN.powerN(3, 1), 3); }
+    public void powerOneTest() {
+        Assert.assertEquals(PowerOfN.powerN(3, 1), 3);
+    }
 
     @Test
     public void powerTwoTest() {

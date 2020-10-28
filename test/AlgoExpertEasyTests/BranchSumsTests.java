@@ -1,11 +1,9 @@
 package AlgoExpertEasyTests;
 
 import Easy.BranchSums;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -15,7 +13,7 @@ public class BranchSumsTests {
     private BranchSums.BinaryTree bt;
 
     @BeforeMethod
-    public void beforeMethod(){
+    public void beforeMethod() {
         bt = new BranchSums.BinaryTree(1);
         bt.left = new BranchSums.BinaryTree(2);
         bt.right = new BranchSums.BinaryTree(3);
@@ -29,29 +27,27 @@ public class BranchSumsTests {
     }
 
     @Test
-    public void defaultBranchSumTest(){
+    public void defaultBranchSumTest() {
         List<Integer> result = BranchSums.branchSums(bt);
         List<Integer> myList = Arrays.asList(15, 16, 18, 10, 11);
         Assert.assertEquals(result, myList);
     }
 
     @Test
-    public void oneNodeBranchSumTest(){
+    public void oneNodeBranchSumTest() {
         List<Integer> result = BranchSums.branchSums(new BranchSums.BinaryTree(1));
         List<Integer> myList = Arrays.asList(1);
         Assert.assertEquals(result, myList);
     }
 
     @Test
-    public void twoNodeBranchSumTest(){
+    public void twoNodeBranchSumTest() {
         BranchSums.BinaryTree bt = new BranchSums.BinaryTree(1);
         bt.left = new BranchSums.BinaryTree(2);
         List<Integer> result = BranchSums.branchSums(bt);
         List<Integer> myList = Collections.singletonList(3);
         Assert.assertEquals(result, myList);
     }
-
-
 
 
 }

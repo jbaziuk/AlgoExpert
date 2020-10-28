@@ -7,7 +7,9 @@ import org.testng.annotations.Test;
 public class CountHiTests {
 
     @Test
-    public void noCountHiTest() { Assert.assertEquals(CountHi.countHi("aaa"), 0); }
+    public void noCountHiTest() {
+        Assert.assertEquals(CountHi.countHi("aaa"), 0);
+    }
 
     @Test
     public void oneCountHiTest() {
@@ -23,7 +25,6 @@ public class CountHiTests {
     public void notLowerTest() {
         Assert.assertEquals(CountHi.countHi("aHiahIa"), 0);
     }
-
 
 
 }

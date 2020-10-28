@@ -10,7 +10,7 @@ public class NodeDepthsTests {
     BinaryTree bt;
 
     @BeforeMethod
-    public void beforeMethod(){
+    public void beforeMethod() {
         bt = new BinaryTree(1);
         bt.left = new BinaryTree(2);
         bt.right = new BinaryTree(3);
@@ -23,13 +23,13 @@ public class NodeDepthsTests {
     }
 
     @Test
-    public void defaultBranchSumTest(){
+    public void defaultBranchSumTest() {
         int result = NodeDepths.nodeDepths(bt);
         Assert.assertEquals(result, 16);
     }
 
     @Test
-    public void smallBranchSumTest(){
+    public void smallBranchSumTest() {
         BinaryTree bt2 = new BinaryTree(1);
         bt2.left = new BinaryTree(2);
         bt2.right = new BinaryTree(3);
@@ -38,7 +38,7 @@ public class NodeDepthsTests {
     }
 
     @Test
-    public void anotherSmallBranchSumTest(){
+    public void anotherSmallBranchSumTest() {
         BinaryTree bt2 = new BinaryTree(1);
         bt2.left = new BinaryTree(2);
         int result = NodeDepths.nodeDepths(bt2);
@@ -47,14 +47,14 @@ public class NodeDepthsTests {
 
 
     @Test
-    public void reallySmallBranchSumTest(){
+    public void reallySmallBranchSumTest() {
         BinaryTree bt2 = new BinaryTree(1);
         int result = NodeDepths.nodeDepths(bt2);
         Assert.assertEquals(result, 0);
     }
 
     @Test
-    public void midSumTest(){
+    public void midSumTest() {
         BinaryTree bt2 = new BinaryTree(1);
         bt2.left = new BinaryTree(2);
         bt2.right = new BinaryTree(3);

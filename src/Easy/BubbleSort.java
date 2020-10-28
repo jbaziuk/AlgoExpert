@@ -4,7 +4,7 @@ public class BubbleSort {
 
     public static int[] bubbleSort(int[] array) {
         if (array == null || array.length == 0) {
-            return new int []{};
+            return new int[]{};
         }
         boolean isSorted = false;
         int counter = 0;

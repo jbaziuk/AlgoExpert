@@ -9,7 +9,7 @@ public class FindClosetValueInBST {
         int closest = currentNode.value;
         while (currentNode != null) {
             int targetClosestABS = Math.abs(target - closest);
-            int targetCurrentABS = Math.abs(target -  currentNode.value);
+            int targetCurrentABS = Math.abs(target - currentNode.value);
 
             //if (Math.abs(target - closest) > Math.abs(target - currentNode.value)) {
             if (targetClosestABS > targetCurrentABS) {
@@ -30,19 +30,19 @@ public class FindClosetValueInBST {
     public static int findClosestValueInBstBAD(BST tree, int target) {
         int cv;
         BST current = tree;
-        while (true){
-            if (target < current.value){
-                if (current.left == null){
+        while (true) {
+            if (target < current.value) {
+                if (current.left == null) {
                     cv = current.value;
                     break;
-                } else{
+                } else {
                     current = current.left;
                 }
-            } else{
-                if (current.right == null){
+            } else {
+                if (current.right == null) {
                     cv = current.value;
                     break;
-                } else{
+                } else {
                     current = current.right;
                 }
             }

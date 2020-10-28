@@ -1,9 +1,10 @@
 package Easy;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BranchSums {
-    
+
     public static class BinaryTree {
         public int value;
         public BinaryTree left;
@@ -22,14 +23,14 @@ public class BranchSums {
         return sums;
     }
 
-    public static void calculateBranchSums(BinaryTree node, int runningSum, List<Integer> sums){
-        if(node == null){
+    public static void calculateBranchSums(BinaryTree node, int runningSum, List<Integer> sums) {
+        if (node == null) {
             return;
         }
 
         int newRunningSum = runningSum + node.value;
 
-        if(node.left == null && node.right == null){
+        if (node.left == null && node.right == null) {
             sums.add(newRunningSum);
             return;
         }

@@ -13,7 +13,7 @@ public class CountSevenTests {
 
     @Test
     public void sumSevenMultiTest() {
-         Assert.assertEquals(CountSeven.count7(27177), 3);
+        Assert.assertEquals(CountSeven.count7(27177), 3);
     }
 
 }

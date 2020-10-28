@@ -13,8 +13,8 @@ public class ValidateSubSequence {
         int arrIdx = 0;
         int seqIdx = 0;
 
-        while (arrIdx < array.size() && seqIdx < sequence.size()){
-            if (array.get(arrIdx).equals(sequence.get(seqIdx))){
+        while (arrIdx < array.size() && seqIdx < sequence.size()) {
+            if (array.get(arrIdx).equals(sequence.get(seqIdx))) {
                 seqIdx++;
             }
             arrIdx++;
@@ -23,23 +23,23 @@ public class ValidateSubSequence {
     }
 
     public static boolean isValidSubsequence2(List<Integer> array, List<Integer> sequence) {
-        if (array == null || array.size() == 0){
+        if (array == null || array.size() == 0) {
             return false;
-        } else   if (sequence == null || sequence.size() == 0){
+        } else if (sequence == null || sequence.size() == 0) {
             return false;
-        } else if (array.size() < sequence.size()){
+        } else if (array.size() < sequence.size()) {
             return false;
         }
 
         int seqIndex = 0;
         boolean isSubSequence = false;
 
-        for (int num : array){
-            if(num == sequence.get(seqIndex)){
+        for (int num : array) {
+            if (num == sequence.get(seqIndex)) {
                 seqIndex++;
             }
 
-            if(seqIndex > sequence.size() - 1){
+            if (seqIndex > sequence.size() - 1) {
                 isSubSequence = true;
                 break;
             }
@@ -47,8 +47,6 @@ public class ValidateSubSequence {
         }
         return isSubSequence;
     }
-
-
 
 
 }

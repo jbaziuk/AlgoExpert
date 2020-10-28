@@ -14,7 +14,7 @@ public class DepthFirstSearchOnGraphTests {
     DepthFirstSearchOnGraph.Node myGraph;
 
     @BeforeMethod
-    public void beforeMethod(){
+    public void beforeMethod() {
         myGraph = new DepthFirstSearchOnGraph.Node("A");
         myGraph.addChild("B");
         myGraph.addChild("C");

@@ -7,12 +7,10 @@ import org.testng.annotations.Test;
 public class ValidateSuqSequenceTests {
 
     @Test
-    public void defaultSequenceTest(){
-        boolean result  = ValidateSubSequence.isValidSubsequence2(ValidateSubSequence.array, ValidateSubSequence.sequence);
+    public void defaultSequenceTest() {
+        boolean result = ValidateSubSequence.isValidSubsequence2(ValidateSubSequence.array, ValidateSubSequence.sequence);
         Assert.assertTrue(result);
     }
-
-
 
 
 }
