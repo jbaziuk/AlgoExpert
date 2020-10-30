@@ -13,23 +13,6 @@ public class BstConstruction {
             this.value = value;
         }
 
-        public BST insertR(int value) {
-            if (value < this.value) {
-                if (this.left == null) {
-                    this.left = new BST(value);
-                } else {
-                    this.left.insertR(value);
-                }
-            } else {
-                if (this.right == null) {
-                    this.right = new BST(value);
-                } else {
-                    this.right.insertR(value);
-                }
-            }
-            return this;
-        }
-
         public BST insert(int value) {
             BST currentNode = this;
 
@@ -52,6 +35,25 @@ public class BstConstruction {
             }
             return this;
         }
+
+        public BST insertRecursive(int value) {
+            if (value < this.value) {
+                if (this.left == null) {
+                    this.left = new BST(value);
+                } else {
+                    this.left.insertRecursive(value);
+                }
+            } else {
+                if (this.right == null) {
+                    this.right = new BST(value);
+                } else {
+                    this.right.insertRecursive(value);
+                }
+            }
+            return this;
+        }
+
+
     }
 
 }

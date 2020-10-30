@@ -4,7 +4,6 @@ import java.util.List;
 
 public class BST {
 
-
     public int value;
     public BST left;
     public BST right;
@@ -62,7 +61,6 @@ public class BST {
         array.add(tree.value);
         return array;
     }
-
 
 }
 
