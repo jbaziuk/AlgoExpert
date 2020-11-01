@@ -16,7 +16,6 @@ public class TimeMe {
         this.running = false;
     }
 
-    //elaspsed time in milliseconds
     public long getElapsedTimeMilli() {
         long elapsed;
         if (running) {
@@ -24,10 +23,10 @@ public class TimeMe {
         } else {
             elapsed = (stopTime - startTime);
         }
+        System.out.println("Elapsed time in milli seconds is: " + elapsed);
         return elapsed;
     }
 
-    //elaspsed time in seconds
     public long getElapsedTimeSecs() {
         long elapsed;
         if (running) {
@@ -35,6 +34,7 @@ public class TimeMe {
         } else {
             elapsed = ((stopTime - startTime) / 1000);
         }
+        System.out.println("Elapsed time in seconds is: " + elapsed);
         return elapsed;
     }
 }
