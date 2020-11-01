@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.NoX;
+import CodingBat.Recursion.NoX;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

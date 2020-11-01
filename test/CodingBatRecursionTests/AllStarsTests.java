@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.AllStar;
+import CodingBat.Recursion.AllStar;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

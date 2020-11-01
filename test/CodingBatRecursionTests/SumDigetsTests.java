@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.SumDigets;
+import CodingBat.Recursion.SumDigets;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

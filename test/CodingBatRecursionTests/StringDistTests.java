@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.StringDist;
+import CodingBat.Recursion.StringDist;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.ArraySix;
+import CodingBat.Recursion.ArraySix;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

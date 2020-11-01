@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.NestParen;
+import CodingBat.Recursion.NestParen;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

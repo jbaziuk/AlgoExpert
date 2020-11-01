@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.PowerOfN;
+import CodingBat.Recursion.PowerOfN;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

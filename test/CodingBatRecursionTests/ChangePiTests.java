@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.ChangePi;
+import CodingBat.Recursion.ChangePi;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

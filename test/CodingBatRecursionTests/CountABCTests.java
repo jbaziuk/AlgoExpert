@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.CountABC;
+import CodingBat.Recursion.CountABC;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

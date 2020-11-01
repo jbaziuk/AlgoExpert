@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.StringClean;
+import CodingBat.Recursion.StringClean;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

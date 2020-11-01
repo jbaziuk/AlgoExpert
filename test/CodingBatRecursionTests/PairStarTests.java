@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.PairStar;
+import CodingBat.Recursion.PairStar;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

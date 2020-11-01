@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.SimpleRecursion;
+import CodingBat.Recursion.SimpleRecursion;
 import org.testng.annotations.Test;
 
 public class SimpleRecursionTests {

@@ -1,6 +1,6 @@
 package CodingBatRecursionTests;
 
-import Recursion.ParenBit;
+import CodingBat.Recursion.ParenBit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
