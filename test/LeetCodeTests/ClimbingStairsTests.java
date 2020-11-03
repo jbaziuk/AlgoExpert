@@ -1,7 +1,6 @@
 package LeetCodeTests;
 
 import LeetCode.Easy.ClimbingStairs;
-import LeetCode.Easy.TwoSum;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -29,6 +28,12 @@ public class ClimbingStairsTests {
     public void sixStepsTest() {
         int results = ClimbingStairs.OneOrTwoStepsToNthStair(6);
         Assert.assertEquals(results,13);
+    }
+
+    @Test
+    public void thirteenStepsTest() {
+        int results = ClimbingStairs.OneOrTwoStepsToNthStair(13);
+        Assert.assertEquals(results,377);
     }
 
     @Test
