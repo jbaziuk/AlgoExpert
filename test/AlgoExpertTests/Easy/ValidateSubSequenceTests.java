@@ -4,7 +4,7 @@ import AlgoExpert.Easy.ValidateSubSequence;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ValidateSuqSequenceTests {
+public class ValidateSubSequenceTests {
 
     @Test
     public void defaultSequenceTest() {
