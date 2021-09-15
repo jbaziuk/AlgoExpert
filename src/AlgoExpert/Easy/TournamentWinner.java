@@ -1,6 +1,7 @@
 package AlgoExpert.Easy;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Hashtable;
 
 public class TournamentWinner {
@@ -9,7 +10,7 @@ public class TournamentWinner {
 
     public String tournamentWinner(ArrayList<ArrayList<String>> competitions, ArrayList<Integer> results) {
         String currentBestTeam = "";
-        Hashtable<String,Integer> pointsTable = new Hashtable<>();
+        HashMap<String,Integer> pointsTable = new HashMap<>();
         pointsTable.put(currentBestTeam, 0);
 
         int counter = 0;
@@ -31,7 +32,7 @@ public class TournamentWinner {
         return currentBestTeam;
     }
 
-    public void updatePoints(String team, int points, Hashtable<String,Integer> pointsTable){
+    public void updatePoints(String team, int points, HashMap<String,Integer> pointsTable){
         if (!pointsTable.containsKey(team)){
             pointsTable.put(team, 0);
         }
