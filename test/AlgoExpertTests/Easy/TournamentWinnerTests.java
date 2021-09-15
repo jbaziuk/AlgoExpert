@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class TournamentWinnerTests {
 
     @Test
-    public void resultsCanBePrintedOut() {
+    public void winningTeamIsReturmed() {
         ArrayList<ArrayList<String>> competitions = new ArrayList<>();
 
         ArrayList<String> competiton1 = new ArrayList<>();
@@ -43,7 +43,36 @@ public class TournamentWinnerTests {
         Assert.assertEquals(textResults, "Python");
     }
 
+    @Test
+    public void testTernaryOperatorTrue() {
+
+        int num = 18;
+        String msg = num > 10
+                ? "Number is greater than 10"
+                : "Number is less than or equal to 10";
+
+        Assert.assertEquals(msg, "Number is greater than 10");
+    }
+
+    @Test
+    public void testTernaryOperatorInOneLineTrue() {
+
+        int num = 18;
+        String msg = num > 10 ? "Number is greater than 10" : "Number is less than or equal to 10";
+
+        Assert.assertEquals(msg, "Number is greater than 10");
+
+    }
 
 
+    @Test
+    public void testTernaryOperatorFalse() {
+        int num = 8;
+        String msg = num > 10
+                ? "Number is greater than 10"
+                : "Number is less than or equal to 10";
+
+        Assert.assertEquals(msg, "Number is less than or equal to 10");
+    }
 
 }
