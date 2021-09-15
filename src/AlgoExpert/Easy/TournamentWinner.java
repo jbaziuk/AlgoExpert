@@ -12,21 +12,21 @@ public class TournamentWinner {
         HashMap<String,Integer> pointsTable = new HashMap<>();
         pointsTable.put(currentBestTeam, 0);
 
-        int counter = 0;
+        for(int idx = 0; idx < competitions.size(); idx++ ) {
 
-        for( ArrayList<String> comp: competitions) {
-
+            ArrayList<String> comp = competitions.get(idx);
             String homeTeam = comp.get(0);
             String awayTeam = comp.get(1);
 
-            String winningTeam = (results.get(counter) == HOME_TEAM_WON) ? homeTeam : awayTeam;
+            int result = results.get(idx);
+
+            String winningTeam = (result == HOME_TEAM_WON) ? homeTeam : awayTeam;
 
             updatePoints(winningTeam, 3, pointsTable);
 
             if (pointsTable.get(winningTeam) > pointsTable.get(currentBestTeam)){
                 currentBestTeam = winningTeam;
             }
-            counter++;
         }
         return currentBestTeam;
     }
