@@ -8,11 +8,7 @@ public class FindClosetValueInBST {
         BST currentNode = tree;
         int closest = currentNode.value;
         while (currentNode != null) {
-            int targetClosestABS = Math.abs(target - closest);
-            int targetCurrentABS = Math.abs(target - currentNode.value);
-
-            //if (Math.abs(target - closest) > Math.abs(target - currentNode.value)) {
-            if (targetClosestABS > targetCurrentABS) {
+            if (Math.abs(target - closest) > Math.abs(target - currentNode.value)) {
                 closest = currentNode.value;
             }
             if (target < currentNode.value) {
