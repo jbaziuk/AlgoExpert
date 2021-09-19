@@ -49,5 +49,15 @@ public class BranchSumsTests {
         Assert.assertEquals(result, myList);
     }
 
+    @Test
+    public void threeNodeBranchSumTest() {
+        BranchSums.BinaryTree bt = new BranchSums.BinaryTree(1);
+        bt.left = new BranchSums.BinaryTree(2);
+        bt.right = new BranchSums.BinaryTree(3);
+        List<Integer> result = BranchSums.branchSums(bt);
+        List<Integer> myList = Arrays.asList(3, 4);
+        Assert.assertEquals(result, myList);
+    }
+
 
 }
