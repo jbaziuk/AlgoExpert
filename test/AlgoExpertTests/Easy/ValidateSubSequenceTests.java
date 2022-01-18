@@ -8,7 +8,7 @@ public class ValidateSubSequenceTests {
 
     @Test
     public void defaultSequenceTest() {
-        boolean result = ValidateSubSequence.isValidSubsequence2(ValidateSubSequence.array, ValidateSubSequence.sequence);
+        boolean result = ValidateSubSequence.isValidSubsequence(ValidateSubSequence.array, ValidateSubSequence.sequence);
         Assert.assertTrue(result);
     }
 

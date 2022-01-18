@@ -23,29 +23,26 @@ public class ValidateSubSequence {
     }
 
     public static boolean isValidSubsequence2(List<Integer> array, List<Integer> sequence) {
-        if (array == null || array.size() == 0) {
-            return false;
-        } else if (sequence == null || sequence.size() == 0) {
-            return false;
-        } else if (array.size() < sequence.size()) {
-            return false;
-        }
+        int currSeqPosition = 0;
+        int lastSeqIndex = sequence.size() - 1;
+        boolean isValidSeq = false;
 
-        int seqIndex = 0;
-        boolean isSubSequence = false;
+        if (array.size() < sequence.size()) {
+            return isValidSeq;
+        }
 
         for (int num : array) {
-            if (num == sequence.get(seqIndex)) {
-                seqIndex++;
+            int currentSeqNum = sequence.get(currSeqPosition);
+            if (currentSeqNum == num) {
+                if (lastSeqIndex == currSeqPosition) {
+                    isValidSeq = true;
+                    break;
+                } else {
+                    currSeqPosition += 1;
+                }
             }
-
-            if (seqIndex > sequence.size() - 1) {
-                isSubSequence = true;
-                break;
-            }
-
         }
-        return isSubSequence;
+        return isValidSeq;
     }
 
 
