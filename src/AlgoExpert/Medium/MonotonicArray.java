@@ -16,20 +16,21 @@ public class MonotonicArray {
 
 
     public static boolean isMonotonic(int[] array) {
-        boolean isIncreasing = true;
-        boolean isDecreasing = true;
+        boolean isNonDecreasing = true;
+        boolean isNonIncreasing = true;
+
         for(int i = 1; i < array.length; i++){
             int previousNumber = array[i - 1];
             int currentNumber = array[i];
 
             if(currentNumber < previousNumber){
-                isIncreasing = false;
+                isNonDecreasing = false;
             }
             if(currentNumber > previousNumber){
-                isDecreasing = false;
+                isNonIncreasing = false;
             }
         }
-        return isIncreasing || isDecreasing;
+        return isNonDecreasing || isNonIncreasing;
     }
 
 }
