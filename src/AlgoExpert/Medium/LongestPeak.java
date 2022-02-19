@@ -6,9 +6,7 @@ public class LongestPeak {
     public static int longestPeak(int[] array) {
         int longestPeak = 0;
         int i = 1;
-        //  l i r
-        // [1,4,2]
-        // i = 1
+
         while (i < array.length - 1) {
             boolean isPeak = array[i - 1] < array[i] && array[i] > array[i + 1];
             if (!isPeak) {
