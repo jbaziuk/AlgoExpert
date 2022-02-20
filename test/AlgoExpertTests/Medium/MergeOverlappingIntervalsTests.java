@@ -4,7 +4,7 @@ import AlgoExpert.Medium.MergeOverlappingIntervals;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MergeOverlappingIntercalsTests {
+public class MergeOverlappingIntervalsTests {
 
     @Test
     public void longestPeakExample() {
