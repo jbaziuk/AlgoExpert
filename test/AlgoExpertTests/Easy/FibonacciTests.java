@@ -9,14 +9,14 @@ public class FibonacciTests {
 
     @Test
     public void easyFibTest() {
-        Assert.assertEquals(Fibonacci.getNthFib(5), 3);
+        Assert.assertEquals(Fibonacci.getNthFibUsingDynamicProgramming(6), 5);
     }
 
     @Test
     public void largeNumberTest() {
         TimeMe timer = new TimeMe();
         timer.start();
-        Assert.assertEquals(Fibonacci.getNthFib(500), 2081405077);
+        Assert.assertEquals(Fibonacci.getNthFibUsingDynamicProgramming(500), 2081405077);
         timer.stop();
         timer.getElapsedTimeSecs();
     }
@@ -25,10 +25,9 @@ public class FibonacciTests {
     public void recursiveTest() {
         TimeMe timer = new TimeMe();
         timer.start();
-        Assert.assertEquals(Fibonacci.getNthFibRec(44), 433494437);
+        Assert.assertEquals(Fibonacci.getNthFibRecursive(10), 34);
         timer.stop();
         timer.getElapsedTimeSecs();
     }
-
 
 }
