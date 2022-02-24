@@ -10,7 +10,7 @@ import java.util.List;
 public class ThreeNumberSumTests {
 
     @Test
-    public void FirstExampleThreeNumberSum() {
+    public void firstExampleThreeNumberSum() {
         int[] array = {12, 3, 1, 2, -6, 5, -8, 6};
         List<Integer[]> expectedList = new ArrayList<>();
         expectedList.add(new Integer[]{-8, 2, 6});

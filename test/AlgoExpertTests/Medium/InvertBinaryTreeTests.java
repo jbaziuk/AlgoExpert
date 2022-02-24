@@ -21,8 +21,6 @@ public class InvertBinaryTreeTests {
 
     }
 
-
-
     @Test
     public void createBstFromListUsingPreorderTraversalTest() {
         InvertBinaryTree.invertBinaryTree(tree);

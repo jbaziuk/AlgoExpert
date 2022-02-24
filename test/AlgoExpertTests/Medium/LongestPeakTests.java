@@ -13,7 +13,7 @@ public class LongestPeakTests {
     }
 
     @Test
-    public void OnePeak() {
+    public void onePeak() {
         int result = LongestPeak.longestPeak(new int[] {0,4,2});
         Assert.assertEquals(result, 3);
     }

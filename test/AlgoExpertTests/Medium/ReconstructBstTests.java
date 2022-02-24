@@ -22,12 +22,6 @@ public class ReconstructBstTests {
 
     @Test
     public void createBstFromListUsingPreorderTraversalTest() {
-        String str = "hello";
-
-        String temp = str.substring(1, str.length() -1);
-
-
-
         List<Integer> preOrderTraversalValues = new ArrayList<>(Arrays.asList(10,4,2,1,5,17,19,18));
         ReconstructBst tree = new ReconstructBst();
         BST result = tree.reconstructBst(preOrderTraversalValues);
