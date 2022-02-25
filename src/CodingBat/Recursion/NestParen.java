@@ -14,6 +14,19 @@ public class NestParen {
         }
     }
 
+    public boolean nestParenUsingStartsAndEndsWith(String str) {
+        if (str.length() == 0) {
+            return true;
+        }
+
+        if(str.startsWith("(") && str.endsWith(")")){
+            return nestParen(str.substring(1, str.length()-1));
+        } else {
+            return false;
+        }
+    }
+
+
 
 }
 

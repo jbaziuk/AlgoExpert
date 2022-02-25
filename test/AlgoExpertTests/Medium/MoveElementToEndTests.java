@@ -10,7 +10,7 @@ import java.util.List;
 public class MoveElementToEndTests {
 
     @Test
-    public void FirstExampleThreeNumberSum() {
+    public void moveElementToEnd() {
 
         List<Integer> expectedList = Arrays.asList(4, 1, 3, 2, 2, 2, 2, 2);
 

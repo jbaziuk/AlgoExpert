@@ -8,7 +8,12 @@ public class CypherTests {
 
     @Test
     public void canBeFound() {
-        Assert.assertEquals("bbb", Cypher.caesarCypherEncryptor("aaa", 1));
+        Assert.assertEquals("ccc", Cypher.caesarCypherEncryptor("aaa", 2));
+    }
+
+    @Test
+    public void canBeFoundGreatThat26() {
+        Assert.assertEquals(Cypher.caesarCypherEncryptor("abc", 30), "efg");
     }
 
 
