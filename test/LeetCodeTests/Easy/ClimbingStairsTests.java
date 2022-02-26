@@ -1,4 +1,4 @@
-package LeetCodeTests;
+package LeetCodeTests.Easy;
 
 import LeetCode.Easy.ClimbingStairs;
 import org.testng.Assert;

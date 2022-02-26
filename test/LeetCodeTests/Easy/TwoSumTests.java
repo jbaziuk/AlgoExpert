@@ -1,4 +1,4 @@
-package LeetCodeTests;
+package LeetCodeTests.Easy;
 
 import LeetCode.Easy.TwoSum;
 import org.testng.Assert;
