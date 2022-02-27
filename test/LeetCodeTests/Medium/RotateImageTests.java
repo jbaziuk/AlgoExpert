@@ -41,15 +41,4 @@ public class RotateImageTests {
         Assert.assertEquals(array, array);
     }
 
-    @Test
-    public void oddShapeTest() {
-        int[][] array = {{4, 2, 3, 6, 7, 8, 1, 9, 5, 10},
-                {12, 19, 15, 16, 20, 18, 13, 17, 11, 14}};
-        RotateImage.rotate90Degrees(array);
-        Assert.assertEquals(array, array);
-    }
-
-
-
-
 }
