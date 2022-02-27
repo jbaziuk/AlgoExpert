@@ -12,7 +12,7 @@ public class RotateImageTests {
                         { 12,13,14,5 },
                         { 11,16,15,6 },
                         { 10, 9, 8,7 }};
-        RotateImage.rotate90Degrees(array);
+        RotateImage.rotate(array);
         Assert.assertEquals(array, array);
     }
 
@@ -20,7 +20,7 @@ public class RotateImageTests {
     public void smallRotateTest() {
         int[][] array = {{ 1, 2 },
                          { 4, 3 }};
-        RotateImage.rotate90Degrees(array);
+        RotateImage.rotate(array);
         Assert.assertEquals(array, array);
     }
 

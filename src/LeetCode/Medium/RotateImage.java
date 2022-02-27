@@ -4,6 +4,32 @@ import java.util.Arrays;
 
 public class RotateImage {
 
+    public static void rotate(int[][] matrix) {
+        printMatrix(matrix);
+        int size = matrix.length;
+        int layerCount = size / 2;
+
+        for (int layer = 0; layer < layerCount; layer++) {
+            int first = layer;
+            int last = size - first - 1;
+
+            for (int element = first; element < last; element++) {
+                int offset = element - first;
+
+                int topLeft = matrix[first][element];
+                int topRight = matrix[element][last];
+                int bottomRight = matrix[last][last - offset];
+                int bottomLeft = matrix[last - offset][first];
+
+                matrix[first][element] = bottomLeft;
+                matrix[element][last] = topLeft;
+                matrix[last][last - offset] = topRight;
+                matrix[last - offset][first] = bottomRight;
+            }
+        }
+        printMatrix(matrix);
+    }
+
     public static void rotate90Degrees(int[][] matrix) {
         printMatrix(matrix);
         int n = matrix.length;
@@ -50,6 +76,18 @@ public class RotateImage {
 
     public static void printMatrix(int[][] matrix) {
         System.out.println(Arrays.deepToString(matrix).replace("], ", "]\n").replace("[[", "[").replace("]]", "]"));
+        System.out.println();
+    }
+
+    public static void printMatrixUsingForLoops(int[][] matrix) {
+        for (int[] row : matrix)
+        {
+            for (int column : row)
+            {
+                System.out.print(column + " ");
+            }
+            System.out.println();
+        }
         System.out.println();
     }
 
