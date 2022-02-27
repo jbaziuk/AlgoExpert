@@ -12,23 +12,23 @@ public class RotateImageTests {
                         { 12,13,14,5 },
                         { 11,16,15,6 },
                         { 10, 9, 8,7 }};
-        RotateImage.rotate(array);
+        RotateImage.rotate(array, "forward");
         Assert.assertEquals(array, array);
     }
 
     @Test
-    public void smallRotateTest() {
+    public void smallRotateForwardTest() {
         int[][] array = {{ 1, 2 },
                          { 4, 3 }};
-        RotateImage.rotate(array);
+        RotateImage.rotate(array, "forward");
         Assert.assertEquals(array, array);
     }
 
     @Test
-    public void smallArrayRotateBackwardsTest() {
+    public void smallRotateBackwardsTest() {
         int[][] array = {{ 1, 2 },
                          { 4, 3 }};
-        RotateImage.rotateMatrix90DegreesBackwards(array);
+        RotateImage.rotate(array, "back");
         Assert.assertEquals(array, array);
     }
 
@@ -37,7 +37,7 @@ public class RotateImageTests {
         int[][] array = {{1, 2, 3},
                          {8, 9, 4},
                          {7, 6, 5}};
-        RotateImage.rotate90Degrees(array);
+        RotateImage.rotate(array, "forward");
         Assert.assertEquals(array, array);
     }
 

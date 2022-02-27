@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class RotateImage {
 
-    public static void rotate(int[][] matrix) {
+    public static void rotate(int[][] matrix, String direction) {
         printMatrix(matrix);
         int size = matrix.length;
         int layerCount = size / 2;
@@ -21,10 +21,17 @@ public class RotateImage {
                 int bottomRight = matrix[last][last - offset];
                 int bottomLeft = matrix[last - offset][first];
 
-                matrix[first][element] = bottomLeft;
-                matrix[element][last] = topLeft;
-                matrix[last][last - offset] = topRight;
-                matrix[last - offset][first] = bottomRight;
+                if (direction.equals("forward")) {
+                    matrix[first][element] = bottomLeft;
+                    matrix[element][last] = topLeft;
+                    matrix[last][last - offset] = topRight;
+                    matrix[last - offset][first] = bottomRight;
+                } else {
+                    matrix[first][element] = topRight;
+                    matrix[element][last] = bottomRight;
+                    matrix[last][last - offset] = bottomLeft;
+                    matrix[last - offset][first] = topLeft;
+                }
             }
         }
         printMatrix(matrix);
@@ -45,20 +52,7 @@ public class RotateImage {
         printMatrix(matrix);
     }
 
-    public static void rotateMatrix90DegreesBackwards(int[][] mat) {
-        printMatrix(mat);
-        int N = mat.length;
-        for (int i = 0; i < N / 2; i++) {
-            for (int j = i; j < N - i - 1; j++) {
-                int temp = mat[i][j];
-                mat[i][j] = mat[j][N - 1 - i]; // Move values from right to top
-                mat[j][N - 1 - i] = mat[N - 1 - i][N - 1 - j];  // Move values from bottom to right
-                mat[N - 1 - i][N - 1 - j] = mat[N - 1 - j][i]; // Move values from left to bottom
-                mat[N - 1 - j][i] = temp; // Assign temp to left
-            }
-        }
-        printMatrix(mat);
-    }
+
 
     public static int[][] rotateUsingNewMatrixAsResult(int[][] matrix) {
         printMatrix(matrix);
