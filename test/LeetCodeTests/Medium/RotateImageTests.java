@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class RotateImageTests {
 
     @Test
-    public void traverseTest() {
+    public void RotateTest() {
         int[][] array = {{ 1, 2, 3,4 },
                         { 12,13,14,5 },
                         { 11,16,15,6 },
@@ -17,10 +17,18 @@ public class RotateImageTests {
     }
 
     @Test
-    public void smallArrayTraverseTest() {
+    public void smallRotateTest() {
         int[][] array = {{ 1, 2 },
                          { 4, 3 }};
-        RotateImage.rotate90DegreesNEW(array);
+        RotateImage.rotate90Degrees(array);
+        Assert.assertEquals(array, array);
+    }
+
+    @Test
+    public void smallArrayRotateBackwardsTest() {
+        int[][] array = {{ 1, 2 },
+                         { 4, 3 }};
+        RotateImage.rotateMatrix90DegreesBackwards(array);
         Assert.assertEquals(array, array);
     }
 
