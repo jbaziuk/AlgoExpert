@@ -13,4 +13,10 @@ public class NumberOfWaysToMakeChangeTests {
         Assert.assertEquals(result, 2);
     }
 
+    @Test
+    public void waysToMakeChangeSimpleExample2() {
+        int result = NumberOfWaysToMakeChange.numberOfWaysToMakeChange(5, new int[] {1, 2, 5});
+        Assert.assertEquals(result, 4);
+    }
+
 }
