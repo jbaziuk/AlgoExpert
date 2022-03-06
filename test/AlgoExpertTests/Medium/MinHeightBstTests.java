@@ -14,6 +14,11 @@ public class MinHeightBstTests {
         BST bst = MinHeightBst.minHeightBst(new ArrayList<>(Arrays.asList(1,2,5,7,10,13,14,15,22)));
     }
 
+    @Test
+    public void simpleMinHeightBst() {
+        BST bst = MinHeightBst.minHeightBst(new ArrayList<>(Arrays.asList(1,2,5)));
+    }
+
 
 
 }
